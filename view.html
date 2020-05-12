@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pros n' Cons</title>
+        <link rel="shortcut icon" href="icon.png">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body class="" style="background:#DDDDDD">
+        <div class="container-fluid">
+            <div class="row mt-5">
+                <div class="col-5 col-lg-1 ml-auto mr-auto text-center">
+                    <img src="icon.png" class="img-fluid" alt="Icon" style="width: 60px" />
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 col-lg-4 ml-auto mr-auto text-center">
+                    <h1 id="title" class="text-dark h2"></h1>
+                    <h4 id="author" class="text-dark h6"></h4>
+                </div>
+            </div>
+
+
+            <div class="row mt-4">
+                <div class="col-12 col-lg-3 ml-auto mr-auto ml-lg-auto mr-lg-0">
+                    <h4 class="text-dark text-center">Pros</h4>
+                    <hr class="" style="border-top: 1px solid #777777; width:80%" />
+                    <div id="pros">
+                        
+                    </div>
+                </div>
+                <div class="mt-lg-0 mt-4 col-12 col-lg-3 ml-auto mr-auto mr-lg-auto ml-lg-0">
+                    <h4 class="text-dark text-center">Cons</h4>
+                    <hr class="" style="border-top: 1px solid #777777; width:80%" />
+                    <div id="cons">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5 mb-2">
+                <div class="col-12 col-lg-4 ml-auto mr-auto text-center">
+                    <button id="submit-button" class="btn btn-primary" onclick="copyshare()">Copy Sharing Link</button>
+                </div>
+            </div>
+
+        </div>
+        <script src="view.js" type="text/javascript" language="JavaScript"></script>
+    </body>
+</html>

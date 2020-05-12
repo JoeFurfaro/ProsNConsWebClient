@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pros n' Cons</title>
+        <link rel="shortcut icon" href="icon.png">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="new.js" type="text/javascript" language="JavaScript"></script>
+    </head>
+
+    <body class="" style="background:#DDDDDD">
+        <div class="container-fluid">
+            <div class="row mt-5">
+                <div class="col-5 col-lg-1 ml-auto mr-auto text-center">
+                    <img src="icon.png" class="img-fluid" alt="Icon" style="width: 60px" />
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 col-lg-4 ml-auto mr-auto text-center">
+                    <h1 class="h3 text-dark">Pros n' Cons</h1>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-12 col-lg-3 ml-auto text-center">
+                    <p class="text-dark">Your name</p>
+                    <input class="form-control text-center" type="text" id="author" placeholder="Enter your name"  />
+                </div>
+                <div class="col-12 col-lg-3 mr-auto text-center">
+                    <p class="text-dark">Today's topic</p>
+                    <input class="form-control text-center" type="text" id="title" placeholder="Enter your topic"  />
+                </div>
+            </div>
+
+            <hr class="mt-5 d-none d-lg-block" style="border-top: 1px solid #BBBBBB; width:50%" />
+
+            <div class="row mt-4">
+                <div class="col-12 col-lg-3 ml-auto mr-auto ml-lg-auto mr-lg-0">
+                    <h4 class="text-dark text-center">Pros</h4>
+                    <hr class="" style="border-top: 1px solid #BBBBBB; width:80%" />
+                    <div id="pros">
+                        <div id="pro-row-0" class="row pro-row">
+                            <input onkeyup="enter_pro(event)" id="pro-0" style="width: 70%" class="pro-data form-control text-center ml-auto" type="text" placeholder="Enter pro" />
+                            <button class="btn btn-danger mr-auto ml-2" onclick="remove_pro(0)">&times;</button>
+                        </div>
+                    </div>
+                    <div class="row text-center mt-3">
+                        <button class="btn btn-success ml-auto mr-auto" id="add-pro" onclick="add_pro()">Add Pro</button>
+                    </div>
+                </div>
+                <div class="mt-lg-0 mt-4 col-12 col-lg-3 ml-auto mr-auto mr-lg-auto ml-lg-0">
+                    <h4 class="text-dark text-center">Cons</h4>
+                    <hr class="" style="border-top: 1px solid #BBBBBB; width:80%" />
+                    <div id="cons">
+                        <div id="con-row-0" class="row con-row">
+                            <input onkeyup="enter_con(event)" id="con-0" style="width: 70%" class="con-data form-control text-center ml-auto" type="text" placeholder="Enter con" />
+                            <button class="btn btn-danger mr-auto ml-2" onclick="remove_con(0)">&times;</button>
+                        </div>
+                    </div>
+                    <div class="row text-center mt-3">
+                        <button class="btn btn-warning ml-auto mr-auto" id="add-con" onclick="add_con()">Add Con</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4 mb-2">
+                <div class="col-12 col-lg-4 ml-auto mr-auto text-center">
+                    <button id="submit-button" class="btn btn-primary" onclick="submit()">Publish</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
