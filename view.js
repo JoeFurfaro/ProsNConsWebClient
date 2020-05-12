@@ -1,6 +1,6 @@
 var id = window.location.href.split("=")[1];
 
-$.get("http://localhost:3000/posts/get?id=" + id, {}, function (x, y) {
+$.get("http://138.197.169.5:3000/posts/get?id=" + id, {}, function (x, y) {
   if (y == "success") {
     $("#title").html(x.title);
     $("#author").html("By " + x.author);
