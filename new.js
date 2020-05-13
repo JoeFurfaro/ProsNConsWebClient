@@ -105,7 +105,7 @@ function submit() {
   $("#submit-button").prop("disabled", true);
   $("#submit-button").html("Publishing...");
 
-  $.post("http://138.197.169.5:3000/posts/add", packet, function (x, y) {
+  $.post("http://pc.joefurfaro.ca:3000/posts/add", packet, function (x, y) {
     if (y == "success") {
       window.location.href = "view.html?id=" + x.post_id;
     } else {
